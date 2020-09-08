@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALBUM RATE</title>
+    <!--Font-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@700&family=Lora&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-light ">
+        <span class="navbar-brand mb-0 h1">ALBUM RATE</span>
+    </nav>
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-4">Welcome!!!</h1>
+            <p class="lead">This is a website where music viewers rate songs of their favorite artists.</p>
+        </div>
+    </div>
+    <div class="container mt-4">
+        <form id="musicForm">
+                <div class="form-row">
+                    <div class="col">
+                        <label class="d-flex d-flex align-items-baseline" for="title-input">Title: &nbsp;
+                        <input type="text" class="form-control" placeholder="Album Title" id="title">
+                    </div>
+                    <div class="col">
+                        <label class="d-flex d-flex align-items-baseline" for="artist-input">Artist: &nbsp;
+                        <input type="text" class="form-control" placeholder="Artist Name" id="artist">
+                    </div>
+                    <div class="col">
+                        <label class="d-flex d-flex align-items-baseline" id="rating" for="rating-input">Rating: &nbsp;
+                            <input type="number" class="form-control" id="rating-input" placeholder="Rate the movie from 0 to 10" min="0" max="10">
+                        </label>
+                    </div>
+                    <div class="col-auto form-group">
+                   <input type="submit" value="Add New Album" id ="btnAdd"class="btn btn-primary mb-2"></div>
+            </form>
+                <table class="table table-bordered mt-5">
+                    <thead>
+                      <tr>
+                        <th>Title<span class="sort-btn" id="sortTitle">
+                            <i class="fas fa-sort"></i>
+                        </span></th>
+                        <th>Artist <span class="sort-btn" id="sortArtist">
+                            <i class="fas fa-sort"></i>
+                        </span></th>
+                        </th>
+                        <th>Rating<span class="sort-btn" id="sortRating">
+                            <i class="fas fa-sort"></i>
+                        </span></th></th>
+                        <th>Delete</th>
+                      </tr>
+                    </thead>
+                    <tbody id="music-list">
+                    
+                    </tbody>
+                  </table>
+                  <script src="jquery.js"></script> 
+            <script src="script.js"></script>
+        
+
+        </body>
+
+</html>
